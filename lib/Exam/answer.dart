@@ -1,4 +1,7 @@
+import 'package:exam_app/components/rounded_button.dart';
 import 'package:flutter/material.dart';
+
+import '../constant.dart';
 
 class Answer extends StatelessWidget {
   final Function selectHandler;
@@ -10,12 +13,12 @@ class Answer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      child: RaisedButton(
-        color: Colors.lightGreen,
+      child: RoundedButton(
+        color: Colors.purple.shade300,
         textColor: Colors.white,
-        child: Text(answerText),
-        onPressed: selectHandler,
-      ), //RaisedButton
-    ); //Container
+        text: answerText,
+        press: selectHandler,
+      ),
+    );
   }
 }

@@ -27,6 +27,7 @@ dependencies:
   cloud_firestore:
   firebase_auth: ^0.8.4+4
   cupertino_icons: ^1.0.0
+  flutter_svg: ^0.20.0-nullsafety.3
   modal_progress_hud:
 
 dev_dependencies:
@@ -44,4 +45,6 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-
+  assets:
+    - assets/images/
+    - assets/icons/

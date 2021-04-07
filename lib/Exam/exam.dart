@@ -11,8 +11,6 @@ class ExamScreen extends StatefulWidget {
 }
 
 class _ExamScreenState extends State<ExamScreen> {
-
-
   var questionIndex = 0;
   var totalScore = 0;
 
@@ -40,9 +38,10 @@ class _ExamScreenState extends State<ExamScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kPrimaryLightColor,
       appBar: AppBar(
         title: Text('Flutter Exam'),
-        backgroundColor: Color(0xFF00E676),
+        backgroundColor: Colors.lightGreen,
       ),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -55,5 +54,5 @@ class _ExamScreenState extends State<ExamScreen> {
             : Result(totalScore, resetQuiz),
       ),
     );
-}
+  }
 }
