@@ -1,6 +1,6 @@
-# exam_app
+# Flutter Exam_app
 
-A new Flutter application.
+You have to register before giving the exam.
 
 ## Getting Started
 
